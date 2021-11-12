@@ -1,0 +1,36 @@
+.btns {
+  margin: 10px;
+}
+.btn {
+  text-decoration: none;
+  margin: 5px;
+}
+.btn-remove {
+  color: red;
+  &:hover {
+    color: rgb(136, 6, 6);
+    transition: 0.2s;
+  }
+}
+.btn-add {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(29, 104, 165);
+  color: rgb(29, 104, 165);
+  &:hover {
+    color: rgb(0, 18, 42);
+    border: 1px solid rgb(0, 25, 58);
+    transition: 0.2s;
+  }
+}
+.btn-back {
+  padding: 5px 10px;
+  border-radius: 25px;
+  border: 1px solid grey;
+  color: grey;
+  &:hover {
+    color: rgb(41, 41, 41);
+    border: 1px solid rgb(41, 41, 41);
+    transition: 0.2s;
+  }
+}

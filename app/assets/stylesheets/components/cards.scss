@@ -1,0 +1,75 @@
+.movie-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px 0;
+  grid-gap: 10px;
+}
+.list-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px 0;
+  grid-gap: 7px;
+}
+.list-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 150px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  &:hover {
+    filter: brightness(50%);
+    transition: 0.2s;
+  }
+}
+.list-image {
+  background-size: cover;
+
+}
+.list-tag {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+.top-cards {
+  display: flex;
+  align-items: center;
+}
+.movie-card {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.178);
+  border-radius: 3px ;
+}
+.image {
+  height: 55%;
+  overflow: hidden;
+}
+.movie-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  height: 33%;
+}
+.title-rating {
+  display: flex;
+}
+.title {
+  padding: 5px;
+}
+.comment {
+  padding: 0 5px;
+  font-size: small;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12%;
+}

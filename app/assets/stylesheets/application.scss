@@ -13,9 +13,30 @@
  *= require_tree .
  *= require_self
  */
- @import "font-awesome-sprockets";
+@import "font-awesome-sprockets";
 @import "font-awesome";
+@import "lists";
+@import "reviews";
+@import "components/banners";
+@import "components/buttons";
+@import "components/cards";
+@import "components/navbars";
+@import "components/icons";
 
+.romance {
+  background-image: url("https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJvbWFuY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+  background-position: bottom;
+}
+.horror {
+  background-image: url("https://media.istockphoto.com/photos/scary-laughing-pumpkin-and-old-skull-on-ancient-gothic-fireplace-picture-id1328224003?b=1&k=20&m=1328224003&s=170667a&w=0&h=M9HBaJMqTWs_Cr8yDjJQr-W5PG2jvUgxBeBTKpqf4pw=");
+}
+.action {
+  background-image: url("https://media.istockphoto.com/photos/firefighter-with-nation-flag-greeting-card-for-firefighters-day-day-picture-id1322104867?b=1&k=20&m=1322104867&s=170667a&w=0&h=xCWo41VIs_dBWsd7agHywyo1efwTOTOqUK4b0Tw5vTg=");
+}
+.comédie {
+  background-image: url("https://media.istockphoto.com/photos/stage-with-microphone-and-stool-with-red-neon-lamp-with-the-word-picture-id1316581169?b=1&k=20&m=1316581169&s=170667a&w=0&h=Dtc-cS7tuj4QMonluZRhJITXoHAdiWU03QkTfU7sBB8=");
+  background-position: top;
+}
 body {
   margin: 0;
   background-color: rgb(241, 241, 241);
@@ -27,6 +48,9 @@ strong {
 .pd-l {
   padding-left: 5px;
 }
+.pd-t {
+  padding-top: 5px;
+}
 h3{
   margin: 0;
   display: flex;
@@ -37,102 +61,7 @@ p {
   display: flex;
   align-items: center;
 }
-.navbar {
-  padding: 5px 0;
-  background-color: white;
-  min-height: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.btns {
-  margin: 10px;
-}
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: 100%;
-  height: 300px;
-  background: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW92aWV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
-}
-.movie-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 10px 0;
-  grid-gap: 10px;
-}
-.top-cards {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.movie-card {
-  background-color: white;
-  width: 300px;
-  height: 300px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.178);
-  border-radius: 3px ;
-}
-.image {
-  height: 55%;
-  overflow: hidden;
-}
-.movie-image {
-  width: 100%;
-  border-radius: 3px 3px 0 0;
-}
-.top {
-  display: flex;
-  flex-direction: column;
-  height: 33%;
-}
-.title-rating {
-  display: flex;
-}
-.title {
-  padding: 5px;
-}
-.comment {
-  padding: 0 5px;
-  font-size: small;
-}
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 12%;
-}
-.btn {
-  text-decoration: none;
-  margin: 5px;
-}
-.btn-remove {
-  color: red;
-}
-.btn-add {
-  padding: 6px 12px;
-  border-radius: 5px;
-  border: 1px solid rgb(25, 90, 143);
-  color: rgb(25, 90, 143);
-}
-.btn-back {
-  padding: 6px 12px;
-  border-radius: 25px;
-  border: 1px solid grey;
-  color: grey;
-}
 .container {
   width: 930px;
   margin: 10px auto;
-}
-
-.etoile {
-  font-size: small;
-  color: rgb(230, 207, 0);
 }
