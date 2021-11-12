@@ -20,7 +20,6 @@
   <div class="top-cards">
     <div class="btns">
       <%= link_to 'Add a Movie', new_list_bookmark_path(@list), class:"btn btn-add" %>
-      <%= link_to 'Add a Review', new_list_review_path(@list), class:"btn btn-add" %>
     </div>
   </div>
 
@@ -52,25 +51,27 @@
   </div>
 
   <div class="reviews">
-  <h3>Reviews</h3>
-  <% @list.reviews.each do |review| %>
-    <div class="review">
-      <% case review.note%>
-      <% when 5%>
-      <p class="rating"><i class="fas fa-star etoile"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i></p>
-      <% when 4%>
-      <p class="rating"><i class="fas fa-star etoile"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i></p>
-      <% when 3%>
-      <p class="rating"><i class="fas fa-star etoile"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i></p>
-      <% when 2%>
-        <p class="rating"><i class="fas fa-star etoile"></i><i class="fas fa-star etoile pd-l"></i></p>
-      <% when 1%>
-        <p class="rating"><i class="fas fa-star etoile"></i></p>
-      <% end %>
+    <div class="review-content">
+    <h3>Reviews</h3>
+    <% @list.reviews.each do |review| %>
+      <div class="review">
+        <% case review.note%>
+        <% when 5%>
+        <p class="rating"><i class="fas fa-star etoile"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i></p>
+        <% when 4%>
+        <p class="rating"><i class="fas fa-star etoile"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i></p>
+        <% when 3%>
+        <p class="rating"><i class="fas fa-star etoile"></i><i class="fas fa-star etoile pd-l"></i><i class="fas fa-star etoile pd-l"></i></p>
+        <% when 2%>
+          <p class="rating"><i class="fas fa-star etoile"></i><i class="fas fa-star etoile pd-l"></i></p>
+        <% when 1%>
+          <p class="rating"><i class="fas fa-star etoile"></i></p>
+        <% end %>
 
-      <p class="pd-t"><%= review.content %></p>
+        <p class="pd-t"><%= review.content %></p>
+      </div>
+    <% end %>
     </div>
-  <% end %>
+    <%= render "reviews/new", locales: [ @list, Review.new ] %>
   </div>
 </div>
-<%= render "reviews/new", locales: [ @list, Review.new ] %>

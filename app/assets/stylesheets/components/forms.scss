@@ -1,0 +1,24 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+  width: 300px;
+}
+.btn-submit {
+  text-align: center;
+  background-color: #00E27F;
+  border: none;
+  padding: 6px 12px;
+  margin: 20px;
+  color: white;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+abbr {
+  text-decoration: none;
+
+}
