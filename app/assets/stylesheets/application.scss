@@ -43,15 +43,19 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 strong {
+  font-weight: bolder;
   padding: 0;
 }
 .pd-l {
   padding-left: 5px;
 }
+.pd {
+ padding: 0 5px ;
+}
 .pd-t {
   padding-top: 5px;
 }
-h3{
+h4{
   margin: 0;
   display: flex;
   align-items: center;
@@ -62,6 +66,6 @@ p {
   align-items: center;
 }
 .container {
-  width: 930px;
+  width: 800px;
   margin: 10px auto;
 }

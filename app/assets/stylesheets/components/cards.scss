@@ -1,26 +1,26 @@
 .movie-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 10px 0 50px 0;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 .list-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 20px 0;
-  grid-gap: 7px;
+  grid-gap: 10px;
 }
 .list-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 225px;
-  height: 150px;
+  width: 260px;
+  height: 170px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.178);
-  border-radius: 10px;
+  border-radius: 12px;
   &:hover {
     filter: brightness(50%);
-    transition: 0.2s;
+    transition: 0.3s;
   }
 }
 .list-image {
@@ -38,38 +38,51 @@
 }
 .movie-card {
   background-color: white;
-  width: 300px;
-  height: 300px;
+  width: 390px;
+  height: 330px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.178);
-  border-radius: 3px ;
+  border-radius: 2px ;
 }
 .image {
-  height: 55%;
+  height: 60%;
   overflow: hidden;
 }
 .movie-image {
   height: 100%;
   width: 100%;
-  border-radius: 3px 3px 0 0;
+  border-radius: 2px 2px 0 0;
 }
 .top {
   display: flex;
   flex-direction: column;
-  height: 33%;
+  height: 30%;
 }
 .title-rating {
+  margin: 5px;
   display: flex;
 }
 .title {
-  padding: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+}
+.rating {
+  font-size: small;
+  color: rgb(112, 112, 112);
+
+}
+.desc {
+  color: rgb(112, 112, 112);
+  padding: 0 5px;
+  font-size: small;
 }
 .comment {
   padding: 0 5px;
   font-size: small;
+  font-family: 'Yuji Syuku', serif;
 }
 .bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 12%;
+  height: 10%;
 }
